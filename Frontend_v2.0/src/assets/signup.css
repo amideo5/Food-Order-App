@@ -1,0 +1,12 @@
+.form-box-signup{
+    width:380px;
+    height:570px;
+    background-color:rgb(0, 213, 146);
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    opacity:1.0;
+    color: aliceblue;
+    border-radius:2%;
+}

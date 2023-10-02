@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Food Items Component Snapshot testing 1`] = `
+<div>
+  <tr
+    id="1"
+  >
+    <td>
+      Burger
+    </td>
+    <td>
+      10
+    </td>
+    <td>
+      Fast Food
+    </td>
+    <td>
+      <input
+        name="quantity"
+        placeholder="Quantity"
+        required=""
+        type="number"
+        value=""
+      />
+    </td>
+    <td>
+      <button
+        class="btn btn-primary"
+        type="button"
+      >
+        Add to Cart
+      </button>
+    </td>
+  </tr>
+</div>
+`;

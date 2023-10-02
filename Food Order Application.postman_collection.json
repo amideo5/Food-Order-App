@@ -1,0 +1,394 @@
+{
+	"info": {
+		"_postman_id": "45e54f93-0ffe-43e8-b6d6-89ef163913f3",
+		"name": "Food Order Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26135406"
+	},
+	"item": [
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Get Order ",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\" : \"aryantrvd22@gmail.com\",\n    \"password\" : \"qwer1234\"\n}\t\n\t",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/orders/getOrders",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"orders",
+								"getOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order By Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/orders/getOrder/Aryan",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"orders",
+								"getOrder",
+								"Aryan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"orderList\" : {\n   \t    \"Rajma\" : 1,\n   \t    \"Butter Roti\" : 2,\n        \"Paneer 65\" : 1\n   \t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/orders/createOrder/aryantrvd22@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"orders",
+								"createOrder",
+								"aryantrvd22@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"orderList\" : {\n   \t    \"Rajma\" : 2,\n   \t    \"Butter Roti\" : 2,\n        \"Paneer 65\" : 1\n   \t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/orders/updateOrder/Aryan",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"orders",
+								"updateOrder",
+								"Aryan"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Food",
+			"item": [
+				{
+					"name": "Get Food",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/foods/getFoods",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"foods",
+								"getFoods"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Food By Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/foods/getFood/Rajma",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"foods",
+								"getFood",
+								"Rajma"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Food",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"foodName\" : \"Tandoori Roti\",\n    \"foodPrice\" : \"15.0\",\n    \"foodCategory\" : \"Roti\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/foods/createFood",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"foods",
+								"createFood"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Food",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"foodName\" : \"Tandoori Roti\",\n    \"foodPrice\" : \"25.0\",\n    \"foodCategory\" : \"Roti\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/foods/updateFood/Tandoori Roti",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"foods",
+								"updateFood",
+								"Tandoori Roti"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Food By Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/foods/getFoodCategory/Rice",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"foods",
+								"getFoodCategory",
+								"Rice"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/users/getUsers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"getUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/users/getUser/aryantrvd22@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"getUser",
+								"aryantrvd22@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"Ishita\",\n\t\"email\" : \"ishitat67@gmail.com\",\n\t\"password\" : \"qwer1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/users/createUser",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"createUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"Ish\",\n\t\"email\" : \"ishitat6@gmail.com\",\n\t\"password\" : \"qwer1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/users/updateUser/isat67@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"updateUser",
+								"isat67@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\" : \"aryantrvd22@gmail.com\",\n    \"password\" : \"qwer1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/users/signin",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/users/name/aryantrvd22@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"name",
+								"aryantrvd22@gmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

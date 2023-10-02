@@ -1,0 +1,49 @@
+.page{
+  background: rgb(34,193,195);
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color:white;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
+  .form-box{
+    width:380px;
+    height:470px;
+    background-color:rgb(0, 213, 146);
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    opacity:1.0;
+    color: aliceblue;
+    border-radius:2%;
+}
+  .form-container{
+    display:flex;
+      align-items:center;
+      justify-content:center;
+      height:100vh;
+      width:100%;
+  }
+  .header-form{
+    margin-bottom:15px;
+  }
+  button{
+    margin-top:40px;
+    margin-bottom:10px;
+  }
+  .message{
+    display:flex;
+    justify-content:space-between
+  }
+ 
+  .nav-link{
+    margin: 0px 25px 0px 25px;
+  }
+
+  .form-box-signup{
+    margin: 0px 250px 0px 250px;
+  }
+  
+  

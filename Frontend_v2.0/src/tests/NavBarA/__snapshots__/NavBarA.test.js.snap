@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NavBarA Component Snapshot testing 1`] = `
+<div>
+  <nav
+    class="m-0 py-3 navbar navbar-expand-lg navbar-dark bg-primary"
+  >
+    <div
+      class="container-fluid"
+    >
+      <a
+        class="navbar-brand"
+        href="/welcome"
+      >
+        NEX Food Ordering
+      </a>
+      <button
+        aria-controls="responsive-navbar-nav"
+        aria-label="Toggle navigation"
+        class="navbar-toggler collapsed"
+        type="button"
+      >
+        <span
+          class="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        class="navbar-collapse collapse"
+        id="responsive-navbar-nav"
+      >
+        <div
+          class="me-auto navbar-nav"
+        >
+          <a
+            class="nav-link"
+            href="#"
+            role="button"
+            tabindex="0"
+          />
+          <a
+            class="nav-link"
+            data-rr-ui-event-key="/welcomea"
+            href="/welcomea"
+          >
+            Admin Home
+          </a>
+          <a
+            class="nav-link"
+            data-rr-ui-event-key="/add"
+            href="/add"
+          >
+            Add Food
+          </a>
+          <a
+            class="nav-link"
+            data-rr-ui-event-key="/update"
+            href="/update"
+          >
+            Update Food
+          </a>
+        </div>
+        <div
+          class="navbar-nav"
+        >
+          <a
+            class="nav-link"
+            data-rr-ui-event-key="/admin"
+            href="/admin"
+          >
+            Logout
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
